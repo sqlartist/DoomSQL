@@ -107,3 +107,5 @@ the same directory. Works on any vanilla-format IWAD or PWAD; extended
 - `game_loop` runs at ~12-15 tics/sec, not 35: `WAITFOR DELAY` rounds up to
   SQL Server's ~15.6ms timer resolution. The client's `p_frame` avoids this
   by batching tics per frame instead.
+
+  Tested against FreeDoom (BSD-licensed) so the whole thing can be shared without redistributing commercial game data. It works with a retail DOOM.WAD too — same parser, same schema.
